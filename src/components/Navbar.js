@@ -22,18 +22,20 @@ function Navbar() {
         <h1>KOSSPZ</h1>
 
         <div className="hiddenLinks">
-          <Link to="/"> Home </Link>
+          <Link to="/home"> Home </Link>
           <Link to="/menu"> Menu </Link>
           <Link to="/about">About</Link>
           <Link to="/contact"> Contact</Link>
+          <Link to="/login">Log out</Link>
         </div>
       </div>
 
       <div className="rightSide">
-        <Link to="/"> Home </Link>
+        <Link to="/home"> Home </Link>
         <Link to="/menu"> Menu </Link>
         <Link to="/about">About</Link>
         <Link to="/contact"> Contact</Link>
+        <Link to="/login">Logout</Link>
         <button onClick={toggleNavbar}>
           <Reoder />
         </button>

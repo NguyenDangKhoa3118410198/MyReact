@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 function Home() {
@@ -8,9 +7,7 @@ function Home() {
       <Navbar />
       <h1>HomePage</h1>
       <div className="home">
-        <Link to="/login">
-          <button>Log out</button>
-        </Link>
+        <p>Noi dung</p>
       </div>
     </div>
   );

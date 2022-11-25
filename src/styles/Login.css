@@ -1,13 +1,13 @@
 .main_box--main--login {
-  margin-top: 5%;
-  margin-left: 35%;
+  margin: 5% auto;
   text-align: center;
-  justify-content: center;
   padding: 20px;
-  width: 400px;
-  height: 360px;
+  width: 450px;
+  height: 430px;
   background-color: #121619;
   border-radius: 10px;
+  background-image: none;
+  align-items: center;
 }
 
 /* background-image: linear-gradient(
@@ -17,11 +17,18 @@
     rgb(0, 212, 255) 100%
   ); */
 
-.main_box--main--login .formHeader {
-  height: 270px;
+.main_box--main--login label {
+  font-size: 30px;
+  color: aliceblue;
+  font-weight: bolder;
 }
-.main_box--main--login input {
-  display: block;
+
+.main_box--main--login .formHeader {
+  height: 350px;
+}
+.main_box--main--login input[type="text"],
+input[type="password"] {
+  display: inline-block;
   font-size: large;
   margin: 20px auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -31,17 +38,38 @@
   text-align: center;
   justify-content: center;
 }
+
+.main_box--main--login input[type="submit"] {
+  font-size: large;
+  display: inline-block;
+  margin: 20px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 80%;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+}
+
 .main_box--main--login button {
   margin: 10px 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  padding: 7.5px;
+  padding: 7px;
   width: 100%;
   cursor: pointer;
   border-radius: 10px;
 }
 
-.main_box--main--login .formFooter a {
-  display: block;
+.container .main_box--main--login .formFooter a {
   color: aliceblue;
   margin-bottom: 15px;
+  font-size: medium;
+  display: block;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 15px;
+  color: aliceblue;
 }

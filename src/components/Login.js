@@ -42,35 +42,38 @@ function Login() {
   }
 
   return (
-    <div className="main_box--main--login">
-      <form onSubmit={submit}>
-        <div className="formHeader">
-          <input
-            type="text"
-            id="username"
-            name="username"
-            value={data.username}
-            className="form-control"
-            placeholder="Enter username"
-            onChange={changeHandler}
-          />
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={data.password}
-            className="form-control"
-            placeholder="Enter password"
-            onChange={changeHandler}
-          />
-          <hr></hr>
-          <input type="submit" value="Log In" />;
-        </div>
-      </form>
+    <div className="container">
+      <div className="main_box--main--login">
+        <label class="slide-login">Đăng Nhập</label>
+        <form className="formHeader" onSubmit={submit}>
+          <div>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value={data.username}
+              className="form-control"
+              placeholder="Enter username"
+              onChange={changeHandler}
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={data.password}
+              className="form-control"
+              placeholder="Enter password"
+              onChange={changeHandler}
+            />
+            <hr></hr>
+            <input type="submit" value="Log In" />
+          </div>
+        </form>
 
-      <div className="formFooter">
-        <a href="./home">Quên mật khẩu</a>
-        <a href="./home">Đăng kí ngay</a>
+        <div className="formFooter">
+          <a href="./home">Quên mật khẩu</a>
+          <a href="./home">Đăng kí ngay</a>
+        </div>
       </div>
     </div>
   );
